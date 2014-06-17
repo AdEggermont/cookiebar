@@ -1,0 +1,61 @@
+/*
+
+	Stylesheet for cookiebar
+
+	author:     Ad Eggermont <adeggermont@gmail.com>
+
+*/
+
+.cookiebar {
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	background: #CCC;
+	border-top: 1px solid #AAA;
+	top: 100%;
+	left: 0;
+	margin-top: 0;
+	opacity: 0;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,.1);
+	   -moz-box-shadow: 0 -5px 10px rgba(0,0,0,.1);
+	        box-shadow: 0 -5px 10px rgba(0,0,0,.1);
+	-webkit-transition: margin 1s ease, opacity 1s ease;
+	   -moz-transition: margin 1s ease, opacity 1s ease;
+	        transition: margin 1s ease, opacity 1s ease;
+}
+
+.cookiebar.open {
+	opacity: 1;
+	margin-top: -70px;
+}
+
+	.cookiebar .container {
+		position: relative;
+		padding-top: 27px;
+	}
+
+		.cookiebar .close {
+			font-weight: 700;
+			font-size: 18px;
+			position: absolute;
+			top: 2px;
+			right: 0;
+			text-decoration: none;
+			border: none;
+			color: #FFF;
+		}
+
+		.cookiebar .close:hover {
+			color: #000;
+		}
+
+			.cookiebar p {
+				float: left;
+				margin: 0;
+				padding: 0;
+			}
+
+			.cookiebar p.button {
+				float: right;
+			}
